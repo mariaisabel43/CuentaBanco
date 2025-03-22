@@ -26,4 +26,4 @@ Con diseño simple de usar.
 - Herramientas: Visual Studio, GitHub.
 
 ## Repositorio GitHub
-- https://github.com/mariaisabel43/Cuenta-Bancaria.git
+- https://github.com/mariaisabel43/CuentaBanco
