@@ -13,6 +13,7 @@ namespace Cuenta_Bancaria.Controllers
         {
             return View();
         }
+        //Inicio de sesión de usuarios existentes.
         public async Task<IActionResult> Login(string email, string password)
         {
             try
