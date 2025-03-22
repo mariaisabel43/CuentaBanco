@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Transaction History";
+}
+<div class="container mt-5">
+    <h2 class="text-center">Transaction History - @ViewBag.User.Name</h2>
+    <hr />
+    <div class="row justify-content-center">
+        @if (ViewBag.Transactions != null && ViewBag.Transactions.Count > 0)
+        {
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var transaction in ViewBag.Transactions)
+                            {
+                                <tr>
+                                    <td>@transaction.FromUser</td>
+                                    <td>@transaction.ToUser</td>
+                                    <td>₡@transaction.TotalAmount</td>
+                                    <td>@transaction.Date</td>
+                                </tr>
+                            }
+                        </tbody>                        
+                    </table>
+                    <a href="javascript:history.back()" class="btn btn-custom-1 btn-lg">Return</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <p class="text-center text-muted">No transactions available.</p>
+            <a href="javascript:history.back()" class="btn btn-custom-1 btn-lg">Return</a>
+        }
+    </div>
+</div>
+
+<style>
+    body {
+        background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Cute-Dark-Wallpaper-Anime-620x620.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+    .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .card-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .text-muted {
+        color: #6c757d !important;
+    }
+    .shadow-lg {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-custom-1 {
+        background-color: #665d73;
+        border-color: #665d73;
+        color: #ffffff;
+    }
+        .btn-custom-1:hover {
+            background-color: #665d73;
+            border-color: #665d73;
+        }
+</style>
