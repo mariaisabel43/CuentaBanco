@@ -3,12 +3,14 @@
 }
 <div class="text-center">
     <div class="container mt-5">
+    //Verifiacción de datos correctos
         @if (TempData["Error"] != null)
         {
             <div class="alert alert-danger text-center">
                 @TempData["Error"]
             </div>
         }
+    //
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card shadow-lg p-4">
