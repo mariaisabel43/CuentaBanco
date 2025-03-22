@@ -66,7 +66,8 @@ namespace Cuenta_Bancaria.Controllers
             }
             return RedirectToAction("Balance");
         }
-
+//Realización de transacciones.
+//Verificación de montos superiores y validación de correos.
         public ActionResult createTransaction(string emailToUser, int txtTotalAmount)
         {
             UserHelper userHelper = new UserHelper();
