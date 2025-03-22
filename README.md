@@ -1,26 +1,27 @@
 # Cuenta Bancaria
 
-## Descripci髇
-Este proyecto es un sistema de gesti髇 de transacciones bancarias desarrollado en ASP.NET Core con base de datos Firebase. 
-Permite a los usuarios realizar transacciones, ver su historial y gestionar su saldo, como tambi閚 permite a nuevos usuarios registrase.
+## Descripci贸n
+Este proyecto es un sistema de gesti贸n de transacciones bancarias desarrollado en ASP.NET Core con base de datos Firebase. 
+Permite a los usuarios realizar transacciones, ver su historial y gestionar su saldo, como tambi茅n permite a nuevos usuarios registrarse.
+Con dise帽o simple de usar.
 
 ## Estructura
 - Controllers: Controladores de ASP.NET Core. 
 - Models: Modelos de datos.
-- Views: Vistas de la aplicaci髇.
+- Views: Vistas de la aplicaci贸n.
 - Helpers: Clases auxiliares para Firebase y transacciones.
-- Config: Archivos de configuraci髇 como lo es firebase.json.
+- Config: Archivos de configuraci贸n como lo es firebase.json.
 
-## Caracter韘ticas
-- Registro y autenticaci髇 de usuarios.
-- Realizaci髇 de transacciones entre usuarios.
-- Visualizaci髇 del historial de transacciones.
-- Actualizaci髇 del saldo en tiempo real.
+## Caracter铆sticas
+- Registro y autenticaci贸n de usuarios.
+- Realizaci贸n de transacciones entre usuarios.
+- Visualizaci贸n del historial de transacciones.
+- Actualizaci贸n del saldo en tiempo real.
 
-## Tecnolog韆s Utilizadas
+## Tecnolog铆as usadas
 - Backend: ASP.NET Core, C#.
 - BD: Firebase Firestore.
-- Autenticaci髇: Firebase Authentication.
+- Autenticaci贸n: Firebase Authentication.
 - Frontend: HTML, CSS, Bootstrap.
 - Herramientas: Visual Studio, GitHub.
 
