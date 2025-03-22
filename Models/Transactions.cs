@@ -13,6 +13,7 @@ namespace Cuenta_Bancaria.Models
 
     public class TransactionsHelper
     {
+        //Validación de obtención de historial solo del usuario correspondiente.
         public static async Task<List<TransactionsModel>> GetTransactions(string emails)
         {
             List<TransactionsModel> transactionsList = new List<TransactionsModel>();
