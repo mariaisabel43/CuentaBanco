@@ -13,6 +13,7 @@ namespace Cuenta_Bancaria.Models
 
     public class UserHelper
     {
+	//Obtención de usuarios y creación de los mismos.
         public async Task<UserModel> getUserInfo(string email)
         {
             Query query = FirestoreDb.Create(FirebaseAuthHelper.firebaseAppId).Collection("BankUser").WhereEqualTo("email", email);
